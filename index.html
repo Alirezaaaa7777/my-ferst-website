@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>فروشگاه اینترنتی علیرضا</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="navber">
+
+        <div class="logo">فروشگاه علیرضا</div>
+        <div class="meu">
+            <a href="ferst.html">خانه</a>
+            <a href="shalvar.html">شلوار</a>
+            <a href="tishert.html">تیشرت و پیراهن</a>
+            <a href="kafsh.html">کیف و کفش</a>
+            <a href="too.html">تماس با ما</a>
+           
+
+
+        </div>
+
+    
+            <a href="cart.html" class="cart">
+                (<span id="count">0</span>)🛒سبد خرید
+            </a>  
+            
+
+     
+
+
+
+    </div>
+   
+<div class="hero">
+<h1>به فروشگاه علیرضا خوش اومدید</h1>
+
+<p>بهترین اجناس با بهترین کیفیت و قیمت</p>
+
+<a href="#prod" class="btn">مشاهده محصولات</a>
+
+</div>
+
+ <div class="searche-box"><input type="text" placeholder="....جستجوی محصول"</div>
+ <br>
+
+<div class="banner">
+    <h2>فروش ویژ تابستان</h2>
+    <p>تا 50 درصد تخفیف روی محصولات منتخب</p>
+    <a href="takhfif.html" class="btn">
+        مشاهده محصولات
+    </a>
+</div>
+<div class="slider">
+    <img id="slide" src="تيشرت-Punisher-طرح-اسکلت-هنري-پانيشر-2.webp">
+</div>
+<div id="prod"></div>
+<div class="kr">
+    
+    <a href="shalvar.html" class="menu">
+        
+        <div class="item">
+            <img class="catimg" src="1696489266_8941-1.webp">
+       <h3>شلوار</h3>
+        </div>
+       
+</a>
+<a href="tishert.html" class="menu">
+    
+    <div class="item">
+    <img class="catimg" src="photo_2025-04-05_20-18-01-min.jpg">
+    <h3>تیشرت و پیراهن</h3>
+
+    </div>
+</a>
+    <a href="kafsh.html" class="menu">
+<div class="item">
+    <img class="catimg" src="16582421814970.jpg">
+    <h3>کیف و کفش</h3>
+
+
+</div>
+</a>
+</div>
+<h2 class="title">محصولات پر فروش</h2>
+<div class="best">
+    <a href="mamstyle.html" class="daste">
+      <img class="imag" src="1726215092_4912.webp">
+      <h3>شلوار مام استایل</h3>
+      <p>قیمت : 923,000 تومان</p>
+   </a>
+    
+    <a href="kifsport.html" class="daste">
+      <img class="imag" src="کيف-دوشي-اسپرت-p160-مشکي-فروشگاه-اينترنتي-سارابارا-sarabara-2.jpg">
+      <h3>کیف دوشی پسرانه</h3>
+      <p>قیمت : 1,279,000 تومان</p>
+   </a>
+
+   <a href="niky.html" class="daste">
+      <img class="imag" src="2.webp">
+      <h3>کتونی نایکی طرح لبخندی</h3>
+      <p>قیمت : 1,738,000 تومان</p>
+   </a>
+   
+   <a href="lang.html" class="daste">
+       <img class="imag" src="1740172291_91131.webp">
+
+       <h3>تیشرت لانگ</h3>
+       <p>قیمت : 998,000 تومان</p>
+   </a>
+
+
+
+
+</div>
+
+
+
+
+
+
+<hr>
+<div class="footer">
+
+    <a href="about.html">درباره ما</a> ⎸
+    <a href="too.html">تماس با ما</a> ⎸
+    <a href="s.html">قوانین سایت</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+    let cart = Number(localStorage.getItem("cart"));
+    if(!cart){
+        cart = 0;
+    }
+    document.getElementById("count").innerText = cart;
+    function addToCart(){
+        cart++;
+        localStorage.setItem("cart", cart);
+        document.getElementById("count").innerText = cart;
+
+    }
+
+    
+
+    
+    </script>
+
+
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+
+
+
+</html>
